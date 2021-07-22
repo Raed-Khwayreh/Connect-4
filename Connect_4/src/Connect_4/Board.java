@@ -28,7 +28,7 @@ public class Board {
                    }
              for (int i=0 ; i<arr_col.length; i++)
                  arr_col[i]=-1;
-             
+          
     }
         ////////Drop Piece
     public void drop(int x,int y,boolean t,int mat){
@@ -94,34 +94,144 @@ public class Board {
         return arr_col;
     }
      //////find best cost for best move
-    public int cost(int row){
-        int count=0;
+    public int cost(int row,int col){
+         int count=0;
+         int count2=0;
+         int count3=0;
+         int count4=0;
+         int count5=0;
+         int count6=0;
+         
+         int counter []=new int[6];
+         for(int i=0; i<counter.length; i++)
+             counter[i]=0;
+         
         int cost=0;
-        int dis=0;
         int flag=0;
-        //////////////find how many same piece in this row
-           for(int col=0;col <7 ;col++){
-               if(c[row][col]==2 && dis<=2){
+        int flag_c=0;
+        ////////////////////////Horizontal  count 
+           for(int co=0;co <7 ;co++){
+               if(c[row][co]==2){
                    count++;
-                   flag=1;
+                   flag=1; //// check if first node in counting is 2
+                if(co==col)
+                    flag_c=1; /////////check if it reach a given node
                }
-               else  if(c[row][col]==0 && flag==1) 
-               {
-              dis++;
-              continue;
-               }
+               ///////////////if not = 2
+               else if(flag==1) {
+                   /////////////check if it reach the given node / if not count =0 and counting again
+                   if(flag_c!=1){
+                      count=0;
+                      continue;
+                   }
+                    ///////////////if not = 2 / if it =0 or 1
+                   else break;}
              }
-             if(count==5)
-               count-=1;
-             if(count==4) 
+           counter[0]=count; /// store horizontal cout
+         
+           ////////////////////////Virtical  count 
+           int flag2=0;
+           int flag2_c=0;
+            for(int ro=0;ro <6 ;ro++){
+               if(c[ro][col]==2){
+                   count2++;
+                   flag2=1; /// check if first node in counting is 2
+                   if(ro==row)
+                    flag2_c=1; /////////check if it reach a given node
+               }
+                ///////////////if not = 2
+               else if(flag2==1) {
+                   /////////////check if it reach the given node / if not count =0 and counting again
+                   if(flag2_c!=1){
+                      count2=0;
+                      continue;
+                   }
+                    ///////////////if not = 2 / if it =0 or 1
+                   else break;}
+             }
+             counter[1]=count2; /////////store virtical count
+             
+            ////Negative diagonal  descending count
+            count3++;
+            int co=col;
+              for(int ro=row;ro>0 ;){
+                  ro--;
+                  co++;
+               if(co<7){
+               if(c[ro][co]==2){
+                   count3++;
+               }
+                ///////////////if not = 2 / if it =0 or 1
+               else break;
+             }}
+              counter[2]=count3; /////////store Negative diagonal  descending count
+              
+              ////Negative diagonal  ascending count
+               count4++;
+             co=col;
+              for(int ro=row;ro<5 ;){
+                  ro++;
+                  co--;
+                if(co>=0){
+               if(c[ro][co]==2){
+                   count4++;
+               }
+                ///////////////if not = 2 / if it =0 or 1
+               else break;
+             }}
+               counter[3]=count4; /////////store Negative diagonal  ascending count
+               
+                    ////Positive diagonal decending count 
+                    co=col;
+                    count5++;
+              for(int ro=row;ro>0 ;){
+                    co--;
+                  ro--;
+         
+               if(co>=0){
+               if(c[ro][co]==2){
+                   count5++;
+               }
+                ///////////////if not = 2 / if it =0 or 1
+               else break;
+             }}
+               counter[4]=count5;  /////////store Negative diagonal  ascending count
+               
+                 ////Positive diagonal acending count 
+                      co=col;
+                    count6++;
+              for(int ro=row;ro<5 ;){
+                    co++;
+                  ro++;
+               if(co<7){
+               if(c[ro][co]==2){
+                   count6++;
+               }
+                ///////////////if not = 2 / if it =0 or 1
+               else break;
+             }}
+               counter[5]=count6;   /////////store Positive diagonal  ascending count
+               
+               int counting=0;
+              for(int i=0;i<counter.length;i++)
+                  if(counter[i]>counting)
+                     counting=counter[i]; //////////find best count
+              
+             if(counting==4) 
                cost+=100;
-             if(count==3) 
+             if(counting==3) 
                 cost+=10;
-             if(count==2) 
+             if(counting==2) 
                 cost+=1;
+             
              System.out.println("row="+row);
-             System.out.println("cost="+cost);
              System.out.println("count="+count);
+             System.out.println("count2="+count2);
+             System.out.println("count3="+count3);
+             System.out.println("count4="+count4);
+             System.out.println("count5="+count5);
+             System.out.println("count6="+count6);
+             System.out.println("cost="+cost);
              System.out.println("Expected probability ");
              print(c);
     return cost;
@@ -150,7 +260,7 @@ public class Board {
             for(int rr=0; rr<6 ;rr++)
         c[rr][cc]=matrix[rr][cc];
         drop(row,y[i],turn,0);
-        score=cost(row);
+        score=cost(row,y[i]);
       if (score>best_score){
          best_score=score;
          best_col=i;
@@ -161,7 +271,7 @@ public class Board {
       
       return best_col;
     }
-    /////////print matrix to checkDraw results
+    /////////print board to check results
     public void print(int x[][]){
         System.out.println(""); 
          for (int row = 5; row >= 0; row--)
@@ -201,11 +311,11 @@ public class Board {
              {
                  if(matrix[row][col]==1)
                  {
-                     if(col+3<=6)///////////////////////check horizantal win for player 1
+                     if(col+3<=6)///////////////////////check horizontal win for player 1
                      {
                           if(matrix[row][col+1]==1 && matrix[row][col+2]==1 && matrix[row][col+3]==1)
                          {
-                              JOptionPane.showMessageDialog(null,"PLAYER 1 WIN (Horizantal)");
+                              JOptionPane.showMessageDialog(null,"PLAYER 1 WIN (Horizontal)");
                               f=true;
                               break;
                          }
@@ -224,7 +334,7 @@ public class Board {
                      {
                         if(matrix[row+1][col+1]==1 && matrix[row+2][col+2]==1 && matrix[row+3][col+3]==1)
                          {
-                            JOptionPane.showMessageDialog(null,"PLAYER 1 WIN (Right Diagonal)");
+                            JOptionPane.showMessageDialog(null,"PLAYER 1 WIN (Positive Diagonal)");
                             f=true;
                             break;
                          }
@@ -233,19 +343,20 @@ public class Board {
                      {
                         if(matrix[row-1][col+1]==1 && matrix[row-2][col+2]==1 && matrix[row-3][col+3]==1)
                          {
-                            JOptionPane.showMessageDialog(null,"PLAYER 1 WIN (Left   Diagonal)");
+                            JOptionPane.showMessageDialog(null,"PLAYER 1 WIN (Negative Diagonal)");
                             f=true;
                             break;
                          }
                      }
                  }
+                
                 if(matrix[row][col]==2)
                  {
-                     if(col+3<=6)///////////////////////check horizantal win for player 2
+                     if(col+3<=6)///////////////////////check horizontal win for player 2
                      {
                           if(matrix[row][col+1]==2 && matrix[row][col+2]==2 && matrix[row][col+3]==2)
                          {
-                              JOptionPane.showMessageDialog(null,"PLAYER 2 WIN (Horizantal)");
+                              JOptionPane.showMessageDialog(null,"PLAYER 2 WIN (Horizontal)");
                               f=true;
                               break;
                          }
@@ -265,7 +376,7 @@ public class Board {
                      {
                         if(matrix[row+1][col+1]==2 && matrix[row+2][col+2]==2 && matrix[row+3][col+3]==2)
                          {
-                             JOptionPane.showMessageDialog(null,"PLAYER 2 WIN (Right Diagonal)");
+                             JOptionPane.showMessageDialog(null,"PLAYER 2 WIN (Positive Diagonal)");
                              f=true;
                             break;
                          }
@@ -274,7 +385,7 @@ public class Board {
                      {
                         if(matrix[row-1][col+1]==2 && matrix[row-2][col+2]==2 && matrix[row-3][col+3]==2)
                          {
-                            JOptionPane.showMessageDialog(null,"PLAYER 2 WIN (Left Diagonal)");
+                            JOptionPane.showMessageDialog(null,"PLAYER 2 WIN (Negative Diagonal)");
                             f=true;
                             break;
                          }
