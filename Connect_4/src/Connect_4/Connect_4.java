@@ -13,15 +13,19 @@ import java.util.Scanner;
  */
 public class Connect_4 {
 
-
+  
     public static void main(String[] args) throws IOException {
-             Front f=new Front();
+             
+             First_Page f=new First_Page();
              f.setVisible(true);
              f.setResizable(false);
-              int a= (int)(Math.random()*(1-0+1)+0); 
-             if(a==0){
-             f.setAI();}
-             }
+             f.b3.setVisible(false);
+             f.b4.setVisible(false);
+             f.b5.setVisible(false);
 
+		
+    }}
 
-    }
+  
+
+    
