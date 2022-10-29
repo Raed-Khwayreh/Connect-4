@@ -41,11 +41,10 @@ public class First_Page extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\connect-4-2.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/connect4.jpg"))); // NOI18N
 
         b2.setBackground(new java.awt.Color(255, 102, 102));
         b2.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        b2.setForeground(new java.awt.Color(0, 0, 0));
         b2.setText("AI");
         b2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -55,7 +54,6 @@ public class First_Page extends javax.swing.JFrame {
 
         b1.setBackground(new java.awt.Color(255, 255, 153));
         b1.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        b1.setForeground(new java.awt.Color(0, 0, 0));
         b1.setText("Human");
         b1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -64,7 +62,6 @@ public class First_Page extends javax.swing.JFrame {
         });
 
         b4.setBackground(new java.awt.Color(255, 153, 0));
-        b4.setForeground(new java.awt.Color(0, 0, 0));
         b4.setText("Medium");
         b4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -73,7 +70,6 @@ public class First_Page extends javax.swing.JFrame {
         });
 
         b3.setBackground(new java.awt.Color(153, 255, 153));
-        b3.setForeground(new java.awt.Color(0, 0, 0));
         b3.setText("Easy");
         b3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -82,7 +78,6 @@ public class First_Page extends javax.swing.JFrame {
         });
 
         b5.setBackground(new java.awt.Color(204, 0, 0));
-        b5.setForeground(new java.awt.Color(0, 0, 0));
         b5.setText("Hard");
         b5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,7 +86,6 @@ public class First_Page extends javax.swing.JFrame {
         });
 
         l1.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
-        l1.setForeground(new java.awt.Color(0, 0, 0));
         l1.setText("Connect 4");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -122,11 +116,8 @@ public class First_Page extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(jLabel1))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                         .addGap(43, 43, 43)
                         .addComponent(l1)
                         .addGap(42, 42, 42)
@@ -137,8 +128,11 @@ public class First_Page extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(b5)
                             .addComponent(b3)
-                            .addComponent(b4))))
-                .addContainerGap(34, Short.MAX_VALUE))
+                            .addComponent(b4)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 435, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

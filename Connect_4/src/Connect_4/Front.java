@@ -5,7 +5,6 @@
  */
 package Connect_4;
 
-import javax.swing.ImageIcon;
 
 /**
  *
@@ -20,9 +19,7 @@ public class Front extends javax.swing.JFrame {
         initComponents();
     }
     Board m=new Board();
-      boolean f=true;
       int level,player;
-      ImageIcon icon=new ImageIcon();
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -89,7 +86,7 @@ public class Front extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(51, 51, 255));
         jButton1.setForeground(new java.awt.Color(51, 51, 255));
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\4.png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/4.png"))); // NOI18N
         jButton1.setBorderPainted(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,11 +94,11 @@ public class Front extends javax.swing.JFrame {
             }
         });
 
-        p36.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
         jButton2.setBackground(new java.awt.Color(51, 51, 255));
         jButton2.setForeground(new java.awt.Color(51, 51, 255));
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\4.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/4.png"))); // NOI18N
         jButton2.setBorderPainted(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -109,10 +106,10 @@ public class Front extends javax.swing.JFrame {
             }
         });
 
-        p37.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
         jButton3.setBackground(new java.awt.Color(51, 51, 255));
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\4.png")); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/4.png"))); // NOI18N
         jButton3.setBorderPainted(false);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -120,13 +117,13 @@ public class Front extends javax.swing.JFrame {
             }
         });
 
-        p38.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p40.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
         jButton4.setBackground(new java.awt.Color(51, 51, 255));
         jButton4.setForeground(new java.awt.Color(51, 51, 255));
-        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\4.png")); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/4.png"))); // NOI18N
         jButton4.setBorderPainted(false);
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -136,7 +133,7 @@ public class Front extends javax.swing.JFrame {
 
         jButton5.setBackground(new java.awt.Color(51, 51, 255));
         jButton5.setForeground(new java.awt.Color(51, 51, 255));
-        jButton5.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\4.png")); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/4.png"))); // NOI18N
         jButton5.setBorderPainted(false);
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -144,11 +141,11 @@ public class Front extends javax.swing.JFrame {
             }
         });
 
-        p39.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
         jButton6.setBackground(new java.awt.Color(51, 51, 255));
         jButton6.setForeground(new java.awt.Color(51, 51, 255));
-        jButton6.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\4.png")); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/4.png"))); // NOI18N
         jButton6.setBorderPainted(false);
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -156,11 +153,11 @@ public class Front extends javax.swing.JFrame {
             }
         });
 
-        p41.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
         jButton7.setBackground(new java.awt.Color(51, 51, 255));
         jButton7.setForeground(new java.awt.Color(51, 51, 255));
-        jButton7.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\4.png")); // NOI18N
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/4.png"))); // NOI18N
         jButton7.setBorderPainted(false);
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -168,77 +165,77 @@ public class Front extends javax.swing.JFrame {
             }
         });
 
-        p42.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p29.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p30.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p31.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p32.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p33.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p34.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p35.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p23.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p27.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p25.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p22.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p26.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p24.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p28.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p15.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p20.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p18.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p17.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p19.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p21.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p16.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p12.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p13.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p11.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p9.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p14.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p8.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p10.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p5.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p4.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p1.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p2.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p7.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p6.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
-        p3.setIcon(new javax.swing.ImageIcon("C:\\Users\\raedk\\Downloads\\1.png")); // NOI18N
+        p3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/1.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -415,7 +412,7 @@ public class Front extends javax.swing.JFrame {
                         .addComponent(p14)
                         .addGap(30, 30, 30)
                         .addComponent(p7)))
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -440,58 +437,57 @@ public class Front extends javax.swing.JFrame {
         if(y==5)
         {
             if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p1.setIcon(icon);}
+          p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p1.setIcon(icon);}
+               
+          p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==4)
         {
              if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p8.setIcon(icon);}
+               
+          p8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p8.setIcon(icon);}
+               
+          p8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==3)
         {
             if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p15.setIcon(icon);}
+               
+          p15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p15.setIcon(icon);}
+               
+          p15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==2)
         {
             
            if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p22.setIcon(icon);}
+               
+          p22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p22.setIcon(icon);}
+               
+          p22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==1)
         {
             if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p29.setIcon(icon);}
+               
+          p29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p29.setIcon(icon);}
+               
+          p29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==0)
         {
            
         if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p36.setIcon(icon);}
+               
+          p36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p36.setIcon(icon);}
+               
+          p36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         m.checkforwin();
         m.checkDraw();
@@ -507,58 +503,58 @@ public class Front extends javax.swing.JFrame {
         if(y==5)
         {
             if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p2.setIcon(icon);}
+               
+          p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p2.setIcon(icon);}
+               
+          p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==4)
         {
              if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p9.setIcon(icon);}
+               
+          p9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p9.setIcon(icon);}
+               
+          p9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==3)
         {
             if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p16.setIcon(icon);}
+               
+          p16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p16.setIcon(icon);}
+               
+          p16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==2)
         {
             
            if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p23.setIcon(icon);}
+               
+          p23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p23.setIcon(icon);}
+               
+          p23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==1)
         {
             if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p30.setIcon(icon);}
+               
+          p30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p30.setIcon(icon);}
+               
+          p30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==0)
         {
            
         if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p37.setIcon(icon);}
+               
+          p37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p37.setIcon(icon);}
+               
+          p37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         m.checkforwin();
          if(m.getturn()==true&&player==1&&m.getf()==false)
@@ -574,58 +570,58 @@ public class Front extends javax.swing.JFrame {
         if(y==5)
         {
             if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p3.setIcon(icon);}
+               
+          p3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p3.setIcon(icon);}
+               
+          p3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==4)
         {
              if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p10.setIcon(icon);}
+               
+          p10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p10.setIcon(icon);}
+               
+          p10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==3)
         {
             if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p17.setIcon(icon);}
+               
+          p17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p17.setIcon(icon);}
+               
+          p17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==2)
         {
             
            if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p24.setIcon(icon);}
+               
+          p24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p24.setIcon(icon);}
+               
+          p24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==1)
         {
             if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p31.setIcon(icon);}
+               
+          p31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p31.setIcon(icon);}
+               
+          p31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==0)
         {
            
         if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p38.setIcon(icon);}
+               
+          p38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p38.setIcon(icon);}
+               
+          p38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         m.checkforwin();
         m.checkDraw();
@@ -641,58 +637,58 @@ public class Front extends javax.swing.JFrame {
         if(y==5)
         {
             if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p4.setIcon(icon);}
+               
+          p4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p4.setIcon(icon);}
+               
+          p4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==4)
         {
              if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p11.setIcon(icon);}
+               
+          p11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p11.setIcon(icon);}
+               
+          p11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==3)
         {
             if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p18.setIcon(icon);}
+               
+          p18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p18.setIcon(icon);}
+               
+          p18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==2)
         {
             
            if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p25.setIcon(icon);}
+               
+          p25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p25.setIcon(icon);}
+               
+          p25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==1)
         {
             if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p32.setIcon(icon);}
+               
+          p32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p32.setIcon(icon);}
+               
+          p32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==0)
         {
            
         if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p39.setIcon(icon);}
+               
+          p39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p39.setIcon(icon);}
+               
+          p39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         m.checkforwin();
         m.checkDraw();
@@ -709,58 +705,58 @@ public class Front extends javax.swing.JFrame {
         if(y==5)
         {
             if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p5.setIcon(icon);}
+               
+          p5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p5.setIcon(icon);}
+               
+          p5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==4)
         {
              if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p12.setIcon(icon);}
+               
+          p12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p12.setIcon(icon);}
+               
+          p12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==3)
         {
             if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p19.setIcon(icon);}
+               
+          p19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p19.setIcon(icon);}
+               
+          p19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==2)
         {
             
            if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p26.setIcon(icon);}
+               
+          p26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p26.setIcon(icon);}
+               
+          p26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==1)
         {
             if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p33.setIcon(icon);}
+               
+          p33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p33.setIcon(icon);}
+               
+          p33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==0)
         {
            
         if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p40.setIcon(icon);}
+               
+          p40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p40.setIcon(icon);}
+               
+          p40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         m.checkforwin();
         m.checkDraw();
@@ -777,58 +773,58 @@ public class Front extends javax.swing.JFrame {
         if(y==5)
         {
             if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p6.setIcon(icon);}
+               
+          p6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p6.setIcon(icon);}
+               
+          p6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==4)
         {
              if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p13.setIcon(icon);}
+               
+          p13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p13.setIcon(icon);}
+               
+          p13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==3)
         {
             if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p20.setIcon(icon);}
+               
+          p20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p20.setIcon(icon);}
+               
+          p20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==2)
         {
             
            if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p27.setIcon(icon);}
+               
+          p27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p27.setIcon(icon);}
+               
+          p27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==1)
         {
             if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p34.setIcon(icon);}
+               
+          p34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p34.setIcon(icon);}
+               
+          p34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==0)
         {
            
         if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p41.setIcon(icon);}
+               
+          p41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p41.setIcon(icon);}
+               
+          p41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         m.checkforwin();
         m.checkDraw();
@@ -844,58 +840,58 @@ public class Front extends javax.swing.JFrame {
         if(y==5)
         {
             if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p7.setIcon(icon);}
+               
+          p7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p7.setIcon(icon);}
+               
+          p7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==4)
         {
              if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p14.setIcon(icon);}
+               
+          p14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p14.setIcon(icon);}
+               
+          p14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==3)
         {
             if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p21.setIcon(icon);}
+               
+          p21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p21.setIcon(icon);}
+               
+          p21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==2)
         {
             
            if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p28.setIcon(icon);}
+               
+          p28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p28.setIcon(icon);}
+               
+          p28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==1)
         {
             if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p35.setIcon(icon);}
+               
+          p35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p35.setIcon(icon);}
+               
+          p35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         if(y==0)
         {
            
         if(v==true){
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\3.png");
-          p42.setIcon(icon);}
+               
+          p42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/3.png")));}
         else {
-                icon=new ImageIcon("C:\\Users\\raedk\\Downloads\\2.png");
-          p42.setIcon(icon);}
+               
+          p42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Connect_4/2.png")));}
         }
         m.checkforwin();
         m.checkDraw();
